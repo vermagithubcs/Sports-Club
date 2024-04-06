@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ground</title>
+    <!-- CSS link with the html -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="../css/faculties.css">
+    <link rel="stylesheet" href="./css/cricket.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/gym.css">
+    <link rel="stylesheet" href="../css/bookground.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <!-- Google fonts link with the html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,89.5,300..800;1,89.5,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome link with the html -->
+    <script
+      src="https://kit.fontawesome.com/230747e530.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+      <nav id="navbar">
+        <div class="logo">
+          <li><a href="../index.html">Home</a></li>
+        </div>
+        <ul id="menuList">
+            <li><a href="./cricket.html">Cricket</a></li>
+            <li><a href="./gym.html">Gym</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./bookground.html">Book Ground</a></li>
+            <li><a href="./faculties.html">Faculties</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+      <div class="ground-container">
+      <header>
+        <h1>Book Ground</h1>
+    </header>
+    <main>
+        <section class="booking-form">
+            <h2>Book Your Sports Ground</h2>
+            <form action="booking_process.php" method="POST">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="sport-type">Sport Type:</label>
+                <select id="sport-type" name="sport-type" required>
+                    <option value="Cricket">Cricket</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="tennis">Tennis</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section class="availability-calendar">
+            <h2>Availability Calendar</h2>
+            <!-- Add calendar here -->
+        </section>
+        <section class="facility-details">
+            <h2>Facility Details</h2>
+            <!-- Add facility details here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sports Club. All rights reserved.</p>
+    </footer>
+      </div>
+</head>
+    <script src="/script.js"></script>
+</body>
+</html>

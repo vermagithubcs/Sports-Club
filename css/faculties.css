@@ -1,0 +1,104 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  :root {
+    --main-color: #002d5b;
+  }
+  .logo {
+    color: var(--text-color);
+  }
+  nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 70px;
+  }
+  nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 2vw;
+  }
+  nav .logo a {
+    font-size: 2.5vw;
+    color: #222;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .menu-icon i {
+    color: var(--text-color);
+    font-size: 30px;
+  }
+  @media (max-width: 480px){
+    nav ul {
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #efe5e5;
+      gap: 0;
+      overflow: hidden;
+      z-index: 1000;
+    }
+    #navbar{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #fff;
+    }
+    .menu-icon i{
+      color: #222;
+    }
+    .cricket-page video{
+      position: relative;
+      top: 2rem;
+    }
+    #navbar .logo a{
+      color: #222;
+      font-size: 5vw !important;
+    }
+    nav ul li {
+      padding: 20px;
+    }
+    .menu-icon {
+      display: block;
+    }
+    .logo a {
+      color: #e7dfdf;
+      font-size: 5vw;
+    }
+    nav ul li a {
+      font-size: 4vw;
+      color: #222;
+    }
+    #menuList {
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  main .faculties-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #e8e6e6;
+  }

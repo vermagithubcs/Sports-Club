@@ -1,0 +1,637 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.logo {
+  color: var(--text-color);
+}
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 70px;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 2vw;
+}
+nav .logo a {
+  font-size: 2.5vw;
+  color: #222;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i {
+  color: var(--text-color);
+  font-size: 30px;
+}
+:root {
+  --main-color: #002d5b;
+}
+.gallery-container {
+  /* height: 860vh; */
+  width: 100%;
+  background-color: #ddd7d7;
+}
+/* Cricket-Content-Img Design */
+.gallery-container .cricket-content-img h1 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 2rem;
+}
+.cricket-content-img .cricket-img,
+.cricket-content-img .cricket-img-01 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.cricket-content-img .cricket-img img,
+.cricket-content-img .cricket-img-01 img {
+  height: 480px;
+  border-radius: 5px;
+}
+.cricket-content-img .cricket-video,
+.cricket-content-img .cricket-video-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cricket-content-img .cricket-video video,
+.cricket-content-img .cricket-video-1 video {
+  height: 744px;
+  border-radius: 5px;
+}
+.gallery-container .cricket-line {
+  height: 2px;
+  width: 100%;
+  background: #222;
+  margin-top: 5rem;
+}
+/* Gym Gallery Design */
+.gym-gallery h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.gym-gallery .gym-img {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.gym-gallery .gym-img img {
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  border-radius: 5px;
+}
+.gym-gallery .gym-img-01 {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.gym-gallery .gym-img-01 img {
+  height: 480px;
+  border-radius: 5px;
+}
+.gym-gallery .gym-video {
+  display: flex;
+  justify-content: space-around;
+}
+.gym-gallery .gym-video video {
+  margin-top: 5rem;
+  height: 340px;
+  border-radius: 5px;
+}
+/* Yoga Design */
+.yoga-gallery {
+  height: 370vh;
+  width: 100%;
+  background-color: #ddd7d7;
+}
+.yoga-gallery h1 {
+  position: relative;
+  top: 5rem;
+  text-align: center;
+}
+.yoga-gallery .yoga-content img {
+  margin-top: 10rem;
+}
+.yoga-gallery .yoga-img-01,
+.yoga-gallery .yoga-img-02 {
+  display: flex;
+  justify-content: space-around;
+}
+.yoga-gallery .yoga-img-01 img,
+.yoga-gallery .yoga-img-02 img {
+  height: 425px;
+  border-radius: 5px;
+}
+.cricket-content-img h1,
+.gym-gallery h1,
+.yoga-gallery h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.new-gallery-content {
+  display: flex;
+  justify-content: space-around;
+  height: 44vh;
+  width: 100%;
+  background-color: #000000;
+}
+.new-gallery-content .main-gallery {
+  margin-top: 2rem;
+  height: 250px;
+  width: 500px;
+}
+.new-gallery-content .links {
+  margin-top: 2rem;
+  height: 200px;
+  width: 300px;
+}
+.new-gallery-content .main-gallery p {
+  margin-top: 1.3rem;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.new-gallery-content .main-gallery .social-links {
+  position: relative;
+  top: 2rem;
+}
+.new-gallery-content .main-gallery .social-links i {
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  color: white;
+}
+.new-gallery-content .main-gallery .social-links i:hover {
+  color: #fd7e14;
+}
+.new-gallery-content .main-gallery span {
+  color: #fd7e14;
+}
+.new-gallery-content .main-gallery h1 {
+  color: #ffffff;
+}
+.new-gallery-content .links h1 {
+  color: #ffffff;
+}
+.new-gallery-content .links ul li a {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+  line-height: 30px;
+  margin-left: 10px;
+}
+.yoga-line {
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+}
+/* Gallery Responsive Media Queries for Responsive Website */
+@media (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  nav ul {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #efe5e5;
+    gap: 0;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  #navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  .menu-icon i{
+    color: #222;
+  }
+  .cricket-page video{
+    position: relative;
+    top: 2rem;
+  }
+  #navbar .logo a{
+    color: #222;
+    font-size: 4vw;
+  }
+  nav ul li {
+    padding: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .logo a {
+    color: #e7dfdf;
+    font-size: 5vw;
+  }
+  nav ul li a {
+    font-size: 4vw;
+    color: #222;
+  }
+  #menuList {
+    transition: all 0.5s ease-in-out;
+  }
+  .cricket-content-img .cricket-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content-img h1 {
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+    top: 3rem;
+  }
+  .cricket-content-img .cricket-img img {
+    height: 30vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .cricket-content-img .cricket-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content-img .cricket-img-01 img {
+    height: 30vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .cricket-content-img .cricket-video video {
+    height: 33vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .cricket-content-img .cricket-video-1 video {
+    height: 33vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gym-gallery .gym-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img img {
+    height: 30vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gym-gallery .gym-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img-01 img {
+    height: 40vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gym-gallery .gym-video {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .gallery-container {
+    height: 735vh;
+  } */
+  .yoga-gallery .yoga-content img {
+    height: 40vh;
+    width: 100vw;
+  }
+  .yoga-gallery .yoga-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery .yoga-img-02 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery {
+    height: 305vh;
+  }
+  .new-gallery-content {
+    height: 30vh;
+    overflow: hidden;
+  }
+  .new-gallery-content .main-gallery p {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .menu ul a {
+    padding: 1vw 1vw;
+    margin: 1vw 1vw;
+    font-size: 2vw;
+  }
+  .menu .logo a {
+    font-size: 4vw;
+  }
+  .cricket-content-img .cricket-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content-img .cricket-img img {
+    margin-bottom: 3rem;
+    height: 40vh;
+    width: 90vw;
+    padding: 20px;
+    margin-left: 2rem;
+  }
+  .cricket-content-img .cricket-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content-img .cricket-img-01 img {
+    margin-bottom: 3rem;
+    height: 40vh;
+    width: 90vw;
+    padding: 20px;
+    margin-left: 2rem;
+  }
+  .cricket-content-img .cricket-video-1 video {
+    height: 40vh;
+    width: 100vw;
+    padding: 20px;
+  }
+  .gym-gallery .gym-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img img {
+    height: 40vh;
+    width: 100vw;
+    padding: 5vw;
+  }
+  .gym-gallery .gym-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img-01 img {
+    height: 40vh;
+    width: 100vw;
+    padding: 5vw;
+  }
+  .gym-gallery .gym-video {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-video video {
+    height: 35vh;
+    width: 95vw;
+    margin-left: 1rem;
+  }
+  .yoga-gallery .yoga-content img {
+    height: 50vh;
+    width: 100vw;
+  }
+  .yoga-gallery .yoga-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery .yoga-content img {
+    height: 50vh;
+    width: 100vw;
+    padding: 5vw;
+  }
+  .yoga-gallery .yoga-img-02 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery {
+    height: 340vh;
+  }
+  .new-gallery-content {
+    height: 25vh;
+  }
+  .new-gallery-content .main-gallery {
+    height: 20vh;
+    width: 40vw;
+  }
+  .new-gallery-content .main-gallery p {
+    font-size: 3vw;
+  }
+  .new-gallery-content .main-gallery h1 {
+    font-size: 5vw;
+  }
+  .new-gallery-content .links h1 {
+    font-size: 5vw;
+    margin-left: 3rem;
+  }
+  .new-gallery-content .links ul {
+    margin-left: 15vw;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .menu ul a {
+    padding: 1vw 1vw;
+    font-size: 2vw;
+    margin: 0 1vw;
+  }
+  .cricket-content-img .cricket-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content-img .cricket-img img {
+    height: 40vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .cricket-content-img .cricket-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content-img .cricket-img-01 img {
+    height: 40vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .cricket-content-img .cricket-video video {
+    height: 48vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .cricket-content-img .cricket-video-1 video {
+    height: 48vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .gym-gallery .gym-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img img {
+    height: 50vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .gym-gallery .gym-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img-01 img {
+    height: 50vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .gym-gallery .gym-video {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-container {
+    height: 915vh;
+  }
+  .gym-gallery .gym-video video {
+    height: 40vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .yoga-gallery .yoga-content img {
+    height: 50vh;
+    width: 100vw;
+  }
+  .yoga-gallery .yoga-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery .yoga-content img {
+    height: 50vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .yoga-gallery .yoga-img-02 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery {
+    height: 335vh;
+  }
+  .new-gallery-content {
+    height: 25vh;
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .cricket-content-img .cricket-img img {
+    height: 30vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .cricket-content-img .cricket-img-01 img {
+    height: 30vh;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .cricket-content-img .cricket-video video {
+    height: 56vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .cricket-content-img .cricket-video-1 video {
+    height: 56vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gym-gallery .gym-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img img {
+    height: 50vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gym-gallery .gym-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-img-01 img {
+    height: 50vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gym-gallery .gym-video {
+    display: flex;
+    flex-direction: column;
+  }
+  .gym-gallery .gym-video video {
+    height: 56vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .gallery-container {
+    height: 880vh;
+  }
+  .yoga-gallery .yoga-content img {
+    height: 50vh;
+    width: 100vw;
+  }
+  .yoga-gallery .yoga-img-01 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery .yoga-content img {
+    height: 50vh;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .yoga-gallery .yoga-img-02 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-gallery {
+    height: 335vh;
+  }
+  .new-gallery-content {
+    height: 25vh;
+    overflow: hidden;
+  }
+}

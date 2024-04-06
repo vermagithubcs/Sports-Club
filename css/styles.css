@@ -1,0 +1,628 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+:root {
+  --main-color: #002d5b;
+  --text-color: #fff;
+  --bg-color: rgb(37, 215, 215);
+}
+/* Navbar Design */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.logo {
+  color: var(--text-color);
+}
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 70px;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 2vw;
+}
+nav .logo a {
+  font-size: 2.5vw;
+  color: #222;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i {
+  color: var(--text-color);
+  font-size: 30px;
+}
+
+/* ----Cricket-page------- */
+.cricket-page video {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.cricket-content {
+  height: 475vh;
+  width: 100%;
+}
+.cricket-content h1 {
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+.cricket-content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 256px;
+  width: 60%;
+  text-align: center;
+  margin-left: 19rem;
+  font-size: 1.4rem;
+}
+.cricket-page h1 {
+  position: absolute;
+  text-align: center;
+  top: 6rem;
+  left: 25rem;
+  font-size: 2.2rem;
+  margin: 10px;
+  color: var(--main-color);
+}
+.cricket-content .img1 {
+  height: 500px;
+  margin-top: -3rem;
+  margin-left: 19rem;
+  width: 820px;
+}
+.cricket-img .img2 {
+  margin-left: 19rem;
+  width: 820px;
+  height: 500px;
+  margin-top: -4rem;
+}
+.cricket-img .img3 {
+  margin-left: 19rem;
+  width: 820px;
+  height: 500px;
+  margin-top: -4rem;
+}
+.cricket-img .img4 {
+  margin-left: 19rem;
+  width: 820px;
+  height: 500px;
+  margin-top: -4rem;
+}
+.contact {
+  height: 130vh;
+  width: 100%;
+}
+.cricket-content .para,
+.cricket-content .para1,
+.cricket-content .para2 {
+  margin-top: -2rem;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--main-color);
+  position: relative;
+  top: 2rem;
+}
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+  height: 75vh;
+  width: 85%;
+}
+.contact-section {
+  height: 380px;
+  width: 310px;
+}
+.email-form {
+  height: 390px;
+  width: 400px;
+}
+.contact-form .contact-section ul li {
+  margin: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-top: 1px solid #676262;
+}
+.contact-form .contact-section .line {
+  height: 2px;
+  width: 3px;
+}
+
+.contact-form .contact-section ul li:hover {
+  border-bottom: 1px solid black;
+}
+.email-form input {
+  padding: 20px 110px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #222;
+  border: 1px solid #495057;
+}
+#subject {
+  margin-top: 1rem;
+  width: 430px;
+  border: 1px solid #495057;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.contact .email-form button {
+  padding: 15px 187px;
+  background-color: #222;
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.email-form button:hover {
+  background-color: rgb(243, 20, 20);
+}
+.new-line {
+  height: 1px;
+  width: 100%;
+  background-color: #222;
+}
+/* ------Gym-content Design ------ */
+.Gym-content {
+  height: 300vh;
+  width: 100%;
+}
+.Gym-content .new-paragraph {
+  position: relative;
+  top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.Gym-content h1 {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  color: var(--main-color);
+}
+.Gym-content .gym-img img {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 6rem;
+}
+.Gym-content .our-services {
+  height: 130vh;
+  width: 100%;
+  margin-top: 5rem;
+}
+.our-services h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.Gym-content .our-services .gym-image {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 90px;
+  gap: 10px;
+  margin-top: 5rem;
+}
+.Gym-content .our-services .gym-image img {
+  padding: 40px;
+  height: 400px;
+  width: 600px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* ------------yoga-Container------ */
+.yoga-container {
+  position: relative;
+  height: 400vh;
+  width: 100%;
+}
+.yoga-container .heading-content {
+  display: flex;
+  justify-content: center;
+}
+.yoga-container .heading-content #new-heading {
+  position: absolute;
+  height: 100px;
+  top: 5rem;
+  font-size: 2.2rem;
+}
+.yoga-container .heading-content #new-yoga {
+  position: absolute;
+  font-weight: 300;
+  line-height: 2rem;
+  top: 10rem;
+}
+.yoga-container #new-heading span,
+.yoga-container #new-yoga span {
+  color: #393ecb;
+}
+.yoga-container #join {
+  position: absolute;
+  top: 14rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  left: 34rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.yoga-container #contact {
+  background-color: black;
+  color: white;
+}
+.yoga-container #join {
+  color: black;
+  background-color: white;
+}
+.yoga-container #join:hover {
+  border: 1px solid #222;
+}
+.yoga-container #contact:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #222;
+}
+.yoga-container #contact {
+  position: absolute;
+  top: 14rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  left: 44rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.about-us {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 5rem;
+}
+.about-us .img img {
+  height: 450px;
+  margin-left: 8rem;
+  width: 30rem;
+  float: left;
+}
+.content-about {
+  position: relative;
+  right: 8rem;
+  top: 2rem;
+  height: 400px;
+  width: 45%;
+  float: right;
+}
+.content-about h1 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+.content-about p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #797979;
+  line-height: 1.5rem;
+}
+.content-about button {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #222;
+  margin-left: 15rem;
+}
+.content-about button:hover {
+  background-color: white;
+  color: #222;
+  border: 1px solid #222;
+}
+.yoga-pose {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+}
+.yoga-pose .pose-img {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 90px;
+  gap: 10px;
+  margin-top: 10rem;
+}
+.yoga-pose .pose-img img {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.yoga-img {
+  margin-top: 1rem;
+}
+/* Responsive Navbar Design */
+@media (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  nav ul {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #efe5e5;
+    gap: 0;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  #navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  .menu-icon i{
+    color: #222;
+  }
+  .cricket-page video{
+    position: relative;
+    top: 2rem;
+  }
+  #navbar .logo a{
+    color: #222;
+  }
+  nav ul li {
+    padding: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .logo a {
+    color: #e7dfdf;
+    font-size: 5vw;
+  }
+  nav ul li a {
+    font-size: 4vw;
+    color: #222;
+  }
+  #menuList {
+    transition: all 0.5s ease-in-out;
+  }
+  .cricket-content .cricket-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .cricket-content h1 {
+    font-size: 6vw;
+    top: 2rem;
+    display: none;
+  }
+  .cricket-content .img1,
+  .cricket-content .img2,
+  .cricket-content .img3,
+  .cricket-content .img4 {
+    height: 45vw;
+    margin-top: -1rem;
+    margin-left: 4rem;
+    width: 75vw;
+  }
+  .cricket-content {
+    height: 600vw;
+  }
+  .Gym-content h1 {
+    font-size: 4vw;
+  }
+  .Gym-content .new-paragraph {
+    font-size: 2vh;
+  }
+  .Gym-content .gym-img img {
+    width: 100vw;
+  }
+  .Gym-content h1 {
+    font-size: 7vw;
+  }
+  .gym-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .gym-image img {
+    width: 90vw;
+    margin-left: 0;
+  }
+  .Gym-content .our-services .gym-image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Gym-content .our-services .gym-image img {
+    position: relative;
+    right: 5rem;
+    height: 30vh;
+    width: 100vw;
+  }
+  .yoga-img img {
+    height: 30vh;
+    width: 100vw;
+  }
+  .about-us .img img {
+    width: 100vw;
+    height: 100vw;
+    margin-left: 0;
+  }
+  .yoga-container #join,
+  .yoga-container #contact {
+    left: 0;
+  }
+  .yoga-pose .pose-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-about button {
+    margin-left: 0;
+    position: relative;
+    top: -12rem;
+    padding: 10px 15px;
+    font-size: 4vw;
+  }
+  .contact .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .contact-form .contact-section {
+    display: none;
+  }
+  .cricket-content .p-1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cricket-content .p-1 p {
+    height: 20vh;
+    width: 95vw;
+    text-align: center;
+    margin-left: 0;
+    font-size: 4vw;
+    margin-top: 3rem;
+  }
+  .cricket-content .img1,
+  .cricket-content .img2,
+  .cricket-content .img3,
+  .cricket-content .img4 {
+    margin-top: 3rem;
+  }
+  .cricket-content .img-cricket {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cricket-content .img-cricket img {
+    margin-left: 0;
+    width: 90vw;
+  }
+  .cricket-content .img-cricket .img1 {
+    margin-top: 2rem;
+  }
+  .Gym-content {
+    height: 600vw;
+  }
+  .yoga-container .heading-content #new-heading {
+    font-size: 5vw;
+  }
+  .yoga-container .heading-content #new-yoga {
+    top: 7rem;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+  }
+  .yoga-container #join {
+    top: 9rem;
+    padding: 3px 15px;
+    font-size: 0.8rem;
+    margin-left: 7rem;
+  }
+  .yoga-container #contact {
+    top: 9rem;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    margin-left: 13rem;
+  }
+  .content-about p {
+    height: 50vh;
+    width: 70vw;
+    margin-left: 0;
+    margin-left: -3rem;
+    font-size: 4vw;
+  }
+  .content-about h1 {
+    font-size: 5vw;
+  }
+  .content-about .p-content-01 {
+    display: none;
+  }
+  .yoga-pose .pose-img {
+    padding-left: 0;
+  }
+  .yoga-pose {
+    height: 140vh;
+  }
+  .yoga-container {
+    height: 285vh;
+  }
+  .email-form input {
+    padding: 5px 50px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  form input {
+    width: 70%;
+  }
+  .email-form {
+    width: 50vw;
+    position: relative;
+    right: 7rem;
+    top: -8rem;
+  }
+  .contact .email-form #subject {
+    width: 70vw;
+    font-size: 1rem;
+  }
+  .email-form input {
+    width: 70vw;
+  }
+  .contact .email-form button {
+    padding: 7px 115px;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  .contact {
+    height: 100vh;
+    background-color: #ceced1;
+  }
+  .contact h1 {
+    top: 4rem;
+  }
+  .cricket-page h1 {
+    display: none;
+  }
+}

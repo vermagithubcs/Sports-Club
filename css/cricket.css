@@ -1,0 +1,585 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+:root {
+  --main-color: #002d5b;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.logo {
+  color: var(--text-color);
+}
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 70px;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 2vw;
+}
+nav .logo a {
+  font-size: 2.5vw;
+  color: #222;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i {
+  color: var(--text-color);
+  font-size: 30px;
+}
+.container .cricket-img img {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/KFG img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container .about-us {
+  height: 90vh;
+  width: 100%;
+  margin-top: 2rem;
+}
+.container .content {
+  height: 300px;
+  width: 490px;
+  float: right;
+}
+.container .about-us img {
+  height: 500px;
+  border-radius: 15px;
+  border: 2px solid #222;
+}
+.container .about-us {
+  display: flex;
+  justify-content: space-around;
+}
+.container .content h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+}
+.container .content {
+  margin-top: 6rem;
+}
+.container .content p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+.gallery-cricket {
+  margin-top: 5rem;
+  height: 80vh;
+  width: 100%;
+}
+.gallery-cricket .gallery-img img {
+  height: 300px;
+  width: 430px;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.gallery-cricket .gallery-img {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.gallery-cricket h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  position: relative;
+  top: 1rem;
+}
+.gallery-videos {
+  height: 80vh;
+  width: 100%;
+}
+.gallery-videos .gallery-vid video {
+  height: 356px;
+  width: 600px;
+  border-radius: 5px;
+}
+.gallery-vid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.gallery-videos h1 {
+  position: relative;
+  top: 3rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.container .line {
+  height: 2px;
+  width: 100%;
+  background-color: #222;
+}
+.new-cricket-content {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  width: 100%;
+  background-color: #000000;
+}
+.new-cricket-content .main-cricket {
+  margin-top: 2rem;
+  height: 250px;
+  width: 500px;
+}
+.new-cricket-content .links {
+  margin-top: 2rem;
+  height: 200px;
+  width: 300px;
+}
+.new-cricket-content .main-cricket p {
+  margin-top: 1.3rem;
+  line-height: 1.3rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.new-cricket-content .main-cricket .social-links {
+  position: relative;
+  top: 2rem;
+}
+.new-cricket-content .main-cricket .social-links i {
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.2rem;
+  color: white;
+}
+.new-cricket-content .main-cricket .social-links i:hover {
+  color: #fd7e14;
+}
+.new-cricket-content .main-cricket span {
+  color: #fd7e14;
+}
+.new-cricket-content .main-cricket h1 {
+  color: #ffffff;
+}
+.new-cricket-content .links h1 {
+  color: #ffffff;
+}
+.new-cricket-content .links ul li a {
+  font-size: 1.2rem;
+  color: #c4c4c4;
+  line-height: 30px;
+  margin-left: 10px;
+}
+/* Cricket Respononsive Media Queries Design for all the screen */
+@media (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  nav ul {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #efe5e5;
+    gap: 0;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  #navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  .menu-icon i{
+    color: #222;
+  }
+  .cricket-page video{
+    position: relative;
+    top: 2rem;
+  }
+  
+  #navbar .logo a{
+    color: #222;
+    font-size: 5vw;
+  }
+  nav ul li {
+    padding: 20px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .logo a {
+    color: #e7dfdf;
+    font-size: 5vw;
+  }
+  nav ul li a {
+    font-size: 4vw;
+    color: #222;
+  }
+  #menuList {
+    transition: all 0.5s ease-in-out;
+  }
+  .container .cricket-img img {
+    width: 100vw;
+    height: 50vh;
+  }
+  .container .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .about-us img {
+    height: 50vh;
+    width: 100vw;
+  }
+  .container .about-us {
+    height: 150vh;
+  }
+  .container .content p {
+    font-size: 4vw;
+    font-weight: 500;
+    height: 30vh;
+    width: 90vw;
+    margin-left: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .container .content {
+    width: 100vw;
+    margin-top: -7rem;
+  }
+  .gallery-cricket .gallery-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-cricket {
+    margin-top: 3rem;
+    height: 220vh;
+    width: 100vw;
+  }
+  .gallery-cricket .gallery-img img {
+    height: 50vh;
+    width: 100vw;
+    padding: 20px;
+  }
+  .gallery-videos {
+    height: 175vh;
+    width: 100vw;
+  }
+  .gallery-vid {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-videos .gallery-vid video {
+    height: 60vh;
+    width: 100vw;
+    margin-bottom: 3rem;
+  }
+  .new-cricket-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .new-cricket-content .main-cricket h1 {
+    font-size: 5vw;
+    margin-left: 5rem;
+  }
+  .new-cricket-content .main-cricket p {
+    font-size: 4vw;
+    padding: 20px;
+  }
+  .new-cricket-content .links {
+    text-align: center;
+    margin-left: 5rem;
+    height: 0;
+    width: 70vw;
+    position: relative;
+    bottom: 15rem;
+  }
+  .new-cricket-content {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  #navbar .logo a {
+    font-size: 3vw;
+    color: #222;
+  }
+  nav ul li a{
+    color: #222;
+    font-size: 2.5vw;
+  }
+  nav ul{
+    gap: 20px;
+  }
+  nav ul li a:hover{
+    color: #222;
+  }
+  .container .cricket-img img {
+    width: 100vw;
+    height: 50vh;
+  }
+  .container .about-us {
+    display: flex;
+    flex-direction: column;
+    height: 180vh;
+  }
+  .container .content {
+    margin-top: 5rem;
+    margin-left: 6rem;
+  }
+  .container .content p {
+    font-size: 3vw;
+  }
+  .container .content h1 {
+    font-size: 6vw;
+  }
+  .gallery-cricket .gallery-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-cricket .gallery-img img {
+    height: 64vh;
+    width: 100vw;
+    padding: 20px;
+  }
+  .gallery-cricket {
+    height: 240vh;
+  }
+  .gallery-vid {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-videos {
+    height: 180vh;
+  }
+  .gallery-videos .gallery-vid video {
+    height: 70vh;
+    width: 100vw;
+    margin-bottom: 3rem;
+  }
+  .new-cricket-content .main-cricket {
+    height: 40vh;
+    width: 80vw;
+  }
+  .new-cricket-content .main-cricket h1 {
+    font-size: 3vw;
+    margin-left: 5rem;
+  }
+  .new-cricket-content .main-cricket p {
+    font-size: 2.5vw;
+    margin-left: 2rem;
+  }
+  .new-cricket-content .links h1 {
+    font-size: 3vw;
+    margin-left: 4rem;
+  }
+  .new-cricket-content .links ul {
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .menu ul a {
+    font-size: 2vw;
+    padding: 1vw 1vw;
+  }
+  .container .about-us img {
+    height: 50vh;
+    width: 50vw;
+    margin-left: 2rem;
+  }
+  .container .content h1 {
+    font-size: 4vw;
+    margin-top: -4rem;
+  }
+  .container .content p {
+    font-size: 2vw;
+    height: 30vh;
+    width: 42vw;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .gallery-cricket .gallery-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-cricket .gallery-img img {
+    height: 65vh;
+    width: 80vw;
+    margin-left: 5rem;
+  }
+  .gallery-cricket {
+    height: 250vh;
+  }
+  .gallery-vid {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-videos .gallery-vid video {
+    height: 80vh;
+    width: 100vw;
+    margin-bottom: 3rem;
+  }
+  .gallery-videos {
+    height: 220vh;
+  }
+  .new-cricket-content {
+    height: 52vh;
+    overflow: hidden;
+  }
+  .new-cricket-content .main-cricket {
+    height: 35vh;
+    width: 54vw;
+  }
+  .new-cricket-content .main-cricket h1 {
+    font-size: 3vw;
+    margin-left: 2rem;
+  }
+  .new-cricket-content .links {
+    height: 30vh;
+    width: 30vw;
+  }
+  .new-cricket-content .links h1 {
+    font-size: 3vw;
+    margin-left: 3rem;
+  }
+  .new-cricket-content .links ul {
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  .new-cricket-content .links ul li a {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 787px) and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container .about-us img {
+    height: 80vh;
+    width: 51vw;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .container .content {
+    height: 50vh;
+    width: 40vw;
+  }
+  .container .content h1 {
+    font-size: 3vw;
+  }
+  .container .content p {
+    font-size: 2vw;
+    font-weight: 500;
+  }
+  .gallery-cricket .gallery-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-cricket .gallery-img img {
+    height: 60vh;
+    width: 80vw;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+  }
+  .gallery-cricket {
+    height: 250vh;
+  }
+  .gallery-vid {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-videos .gallery-vid video {
+    width: 90vw;
+    height: 95vh;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+  .gallery-videos {
+    height: 240vh;
+  }
+  .new-cricket-content {
+    height: 53vh;
+    overflow: hidden;
+  }
+  .container .content {
+    margin-top: 0rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container .about-us {
+    height: 110vh;
+  }
+  .container .about-us img {
+    width: 50vw;
+  }
+  .container .about-us img {
+    width: 39vw;
+  }
+  .gallery-cricket .gallery-img img {
+    height: 50vh;
+    width: 28vw;
+  }
+  .gallery-videos {
+    height: 100vh;
+  }
+  .gallery-videos .gallery-vid video {
+    height: 54vh;
+    width: 35vw;
+  }
+  .new-cricket-content {
+    height: 53vh;
+    overflow: hidden;
+  }
+}
